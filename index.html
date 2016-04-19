@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script>
+		function validation(form) 
+		{
+			var username = form.user.value;
+			var password = form.pass.value;
+			var password_pattern = /[0-9]+/i;
+			var password_patternprov = password_pattern.test(password);
+			
+			if (username.length > 3 && username.length < 15) {
+				var loginValidation = true;
+				console.log(loginValidation);
+			} else {
+			  loginValidation = false;
+				alert ("Введіть логін довжиною від 3-ьох до 15-ти символів ");
+					} console.log(loginValidation);
+			if (password.length > 8 && password_patternprov == true) {
+				var passwordValidation = true;
+				console.log(passwordValidation);
+			} else {alert ("Введіть цифровий пароль довжиною не менше 8-ми символів")}
+
+		
+			if (loginValidation == true && passwordValidation == true) {
+				window.document.location.href ="main_html/index.html";
+			}
+			return false;
+			
+		}
+
+	</script>
+    	
+  </head>
+
+  <body>
+
+    <div class="login">
+	<h1>Вхід</h1>
+    <form>
+    	<input type="text" name="user" placeholder="Ім'я користувача (від 3 до 5 символів)" required="required"/>
+        <input type="password" name="pass" placeholder="Пароль (не менше 8 символів, цифровий)" required="required"/>
+        <input type="button" onclick="validation(this.form)" class="btn btn-primary" value="Залогінитись"/>
+        
+    </form>
+</div>
+    
+  
+    
+  </body>	
+</html>	

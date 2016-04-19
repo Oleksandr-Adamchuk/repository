@@ -1,0 +1,107 @@
+body {
+    background: #FFF url("../images/bg.png") repeat-x scroll center top;
+    min-width: 960px;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+.header_container {
+    display: block;
+    height: 186px;
+}
+.logo {
+    display: inline-block;
+    width: 50%;
+}
+.logo h1 {
+    padding-left: 15px;
+    
+}
+.logo a {
+    
+    font-weight: bold;
+    font-style: inherit;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #F0F0F0 ;
+    font-size: 42px;
+    text-shadow: 1px 1px 3px red;
+    text-decoration: none;
+}
+.menu_items {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: -64px;
+ }
+.menu_items a {
+    color: #F0F0F0;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 12px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px white;
+}
+.menu_items a:hover {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+.featured_container {
+    background: transparent url("../images/featured_bg.png") no-repeat scroll center top;
+    height: 454px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -94px
+
+}
+.featured_container h2 {
+    padding-top: 55px;
+    padding-left: 20px;
+    color: rgba(57, 59, 54, 0.87);  ;
+}
+.text_container {
+    width: 470px;
+    height: 307px;
+    overflow: hidden;
+}
+.text_container h2 {
+    font-family: Georgia;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 23px;
+}
+.slogan {
+    position: absolute;
+    top: 368px;
+    padding-left: 40px;
+    
+}
+.slogan p {
+    font-family: Georgia;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 6px;
+    font-size: 17px;
+}
+.footer_container {
+background: #000 url(../images/footer_bg.png) repeat-x top center;
+height: 50px;
+width: 100%;
+display: block;
+overflow: hidden;
+color: #fff;
+position: relative;
+top: -80px;
+border-radius: 10px;
+}
+.footer_container {
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
